@@ -86,8 +86,14 @@ body{
     box-shadow: .5rem .5rem var(--clr-neutral-Black-900);
     
 }
-svg{
-    border-radius: 10px;
+.course__img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.course__img img{
+  width: 100%;
+  border-radius: 10px;
 }
 .grid-flow{
     display: grid;
