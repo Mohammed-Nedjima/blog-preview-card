@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Frontend Mentor | Blog preview card</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
-</head>
-
-<body>
-  <main>
-    <div class="course">
-      <figure class="course__img">
-        <img src="./assets/images/illustration-article.svg" alt="illustration">
-      </figure>
-      <div class="course__content">
-        <span class="course__tag">Learning</span>
-        <p class="course__release">Published 21 Dec 2023</p>
-        <a class="course__title">HTML & CSS foundations</a>
-        <p class="course__description">These languages are the backbone of every website, defining structure
-          content,and presentation.</p>
+  <body>
+    <main>
+      <div class="course">
+        <figure class="course__img">
+          <img
+            src="./assets/images/illustration-article.svg"
+            alt="illustration"
+          />
+        </figure>
+        <div class="course__content">
+          <span class="course__tag">Learning</span>
+          <p class="course__release">Published 21 Dec 2023</p>
+          <a class="course__title">HTML & CSS foundations</a>
+          <p class="course__description">
+            These languages are the backbone of every website, defining
+            structure content,and presentation.
+          </p>
+        </div>
+        <div class="course__owner">
+          <a href="" class="course__avatar">
+            <img src="./assets/images/image-avatar.webp" alt="image-avatar" />
+          </a>
+          <a href="">Greg Hooper</a>
+        </div>
       </div>
-      <div class="course__owner">
-        <img class="avatar" src="./assets/images/image-avatar.webp" alt="image-avatar">
-        <p>Greg Hooper</p>
-      </div>
-    </div>
-  </main>
-</body>
-
+    </main>
+  </body>
 </html>
