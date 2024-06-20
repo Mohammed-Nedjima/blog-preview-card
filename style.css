@@ -1,134 +1,142 @@
-:root{
-    --clr-primary-yellow-700: hsl(47, 88%, 63%);
-    --clr-neutral-white:hsl(0, 0%, 100%);
-    --clr-neutral-grey-100:  hsl(0, 0%, 50%);
-    --clr-neutral-Black-900: hsl(0, 0%, 7%);
+:root {
+  --clr-primary-yellow-700: hsl(47, 88%, 63%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+  --clr-neutral-grey-100: hsl(0, 0%, 50%);
+  --clr-neutral-Black-900: hsl(0, 0%, 7%);
 
-    --ff-normal:"Figtree", sans-serif;
-    
-    --fw-regular: 500;
-    --fw-bold: 800;
+  --ff-normal: "Figtree", sans-serif;
+
+  --fw-regular: 500;
+  --fw-bold: 800;
 }
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
     2. Remove default margin
   */
-  * {
-    margin: 0;
-  }
-  /*
+* {
+  margin: 0;
+}
+/*
     Typographic tweaks!
     3. Add accessible line-height
     4. Improve text rendering
   */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  /*
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
     5. Improve media defaults
   */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
     6. Remove built-in form typography styles
   */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
     7. Avoid text overflows
   */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
-  /*
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
     8. Create a root stacking context
   */
-  #root, #__next {
-    isolation: isolate;
-  }
-  /* utilities */
-.flex-group{
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+#root,
+#__next {
+  isolation: isolate;
 }
+/* utilities */
 
-body{
-    --padding-content: 2rem;
-    --gap-content: 2rem;
-
-    min-height: 100vh;
-    background-color: var(--clr-primary-yellow-700);
-    font-family: var(--ff-normal);
-    font-weight: var(--fw-regular);
-    display: grid;
-    gap: var(--gap-content);
-    color: var(--clr-neutral-Black-900);
-    place-items: center;
-    padding: var(--padding-content);
-    font-size: 1rem;
+body {
+  min-height: 100vh;
+  background-color: var(--clr-primary-yellow-700);
+  font-family: var(--ff-normal);
+  font-weight: var(--fw-regular);
+  display: flex;
+  color: var(--clr-neutral-Black-900);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
-.course{
-    background-color: var(--clr-neutral-white);
-    padding: 1.5rem;
-    border-radius: 1rem;
-    max-width: 375px;
-    border: 2px solid var(--clr-neutral-Black-900);
-    box-shadow: .5rem .5rem var(--clr-neutral-Black-900);
-    
+.course {
+  background-color: var(--clr-neutral-white);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  display: grid;
+  gap: 1.5rem;
+  max-width: 385px;
+  border: 2px solid var(--clr-neutral-Black-900);
+  box-shadow: 0.5rem 0.5rem var(--clr-neutral-Black-900);
 }
-.course__img{
+.course__img {
   width: 100%;
   display: flex;
+  border-radius: 10px;
+  overflow: hidden;
   justify-content: center;
 }
-.course__img img{
-  width: 100%;
-  border-radius: 10px;
+.course__content {
+  display: grid;
+  gap: 0.75rem;
 }
-.grid-flow{
-    display: grid;
-    gap: 2rem;
+.course__info {
+  display: grid;
+  gap: 0.4rem;
 }
-.course__content{
-    display: grid;
-    gap: 1rem;
+.course__tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  width: fit-content;
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-primary-yellow-700);
 }
-.course__info{
-    display: grid;
-    gap: .4rem;
+.course__title {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+  cursor: pointer;
 }
-.course__tag{
-
-    padding: .25rem .75rem;
-    border-radius: .25rem;
-    width: fit-content;
-    font-weight: var(--fw-bold);
-    background-color: var(--clr-primary-yellow-700);
-
+.course__lable:hover {
+  color: var(--clr-primary-yellow-700);
 }
-.course__lable{
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: var(--fw-bold);
-    cursor: pointer;
+.course__description {
+  color: var(--clr-neutral-grey-100);
 }
-.course__lable:hover{
-    color: var(--clr-primary-yellow-700);
+.course__owner {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
-.course__description{
-    color: var(--clr-neutral-grey-100);
+.avatar {
+  width: 3rem;
+  width: 3rem;
 }
-.avatar{
-    width: 3rem;
-    width: 3rem;
+.avatar + p {
+  font-weight: var(--fw-bold);
 }
